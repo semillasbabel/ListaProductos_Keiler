@@ -11,24 +11,7 @@ import {
   SafeAreaView,
   TouchableOpacity,
 } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-
-const DATA = [
-    {
-      id: "1",
-      title: "First Item",
-    },
-    {
-      id: "2",
-      title: "Second Item",
-    },
-    {
-      id: "3",
-      title: "Third Item",
-    },
-  ];
+import {DATA} from "../Data/Products";
 
   const Item = ({ item, onPress}) => (
     <TouchableOpacity onPress={onPress} style={[styles.item]}>
