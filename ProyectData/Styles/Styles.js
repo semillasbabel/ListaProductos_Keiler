@@ -45,6 +45,7 @@ export const styles = StyleSheet.create({
         flex: 1, 
         alignItems: 'center', 
         justifyContent: "flex-start", 
+        marginHorizontal: 7,
         backgroundColor: 'white',
     },
 

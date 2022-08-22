@@ -33,7 +33,7 @@ export const DATA = [
       name: "Leche Mu Semidescremada 250ml",
       price: 750,
       imageuri: "https://cdn.shopify.com/s/files/1/1479/5948/products/automercado-lecheyotroslacteos36_b3bc8313-dc51-406c-8758-da8a981853c1_grande.png",
-      description: "leche Semidescremada rica en proteínas, grasas, vitaminas y minerales, necesarias para la nutrición humana."
+      description: "Leche Semidescremada rica en proteínas, grasas, vitaminas y minerales, necesarias para la nutrición humana."
     },
 
     // {
