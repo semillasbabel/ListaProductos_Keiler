@@ -18,17 +18,16 @@ function DetailsScreen({ route, navigation }) {
       <Text style={styles.pricedetails}>Precio: ₡{item.price}</Text>
 
 
-
       <Text style={styles.descriptiondetails}>{item.description}</Text>
 
-      <TouchableOpacity 
-      style={{backgroundColor: "red", marginTop: 10, with:300, height: 50,}}>
+      <TouchableOpacity
+      onPress={() => navigation.goBack()}>
+        <View style = {styles.btnbackdetails}>
+        <Text style={styles.btntext}>Volver</Text>
+        </View>
+      </TouchableOpacity>
 
-      <Text>Volver</Text>
-
-    </TouchableOpacity>
-
-      <Button style={styles.btnbackdetails} title="Go back" onPress={() => navigation.goBack()} />
+      {/* <Button color = "#1168AD" style={styles.btnbackdetails} title="Volver" onPress={() => navigation.goBack()} /> */}
     </View>
   );
 }

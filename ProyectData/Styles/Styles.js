@@ -2,43 +2,48 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
+
+      // ---------- index Styles ----------
     
     container: {
       flex: 1,
-      marginTop: StatusBar.currentHeight || 0,
       backgroundColor: "#1168AD",
     },
 
     item: {
       padding: 20,
-      marginVertical: 5,
+      marginTop: 10,
       marginHorizontal: 70,
       backgroundColor: 'white',
-    //   flexDirection: 'row',
-    //   alignContent: 'center',
       alignItems: 'center',
       borderRadius: 40,
     },
 
-    title: {
+    itemimage:{
+      width: 80, 
+      height: 80
+    },
+
+    itemname: {
       fontSize: 15,
       color: 'black',
       fontWeight: 'bold',
       textAlign: 'center',
     },
 
+    itemdescripcion: {
+      fontSize: 15,
+      marginTop: 5,
+      color: '#1168AD',
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
 
-
-
-
-
-
-    // ---------- Separator ----------
+    // ---------- Details Styles ----------
     containerdetails: {
         flex: 1, 
         alignItems: 'center', 
         justifyContent: "flex-start", 
-        // backgroundColor: 'darkgray',
         backgroundColor: 'white',
     },
 
@@ -70,9 +75,18 @@ export const styles = StyleSheet.create({
     },
 
     btnbackdetails:{
-        marginTop: 10,
-        width: 200,
-        height: 50,
+      backgroundColor : '#1168AD',
+      borderRadius: 30,
+      width: 100,
+      marginTop: 20,
+      height: 40,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+
+    btntext:{
+      color: 'white',
+      fontWeight: 'bold',
     }
 
 });

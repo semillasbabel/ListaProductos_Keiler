@@ -10,10 +10,10 @@ export const Item = ({ item, onPress}) => (
         <Image
         source={{
         uri: item.imageuri}}
-        style={{ width: 80, height: 80 }}/>
+        style={styles.itemimage}/>
 
-      <Text style={[styles.title]}>{item.name}</Text>
-      <Text style={[styles.title]}>₡{item.price}</Text>
+      <Text style={[styles.itemname]}>{item.name}</Text>
+      <Text style={[styles.itemdescripcion]}>₡{item.price}</Text>
 
     </TouchableOpacity>
 );
