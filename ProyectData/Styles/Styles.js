@@ -12,7 +12,8 @@ export const styles = StyleSheet.create({
 
     item: {
       padding: 20,
-      marginTop: 10,
+      marginTop: 5,
+      marginBottom: 5,
       marginHorizontal: 70,
       backgroundColor: 'white',
       alignItems: 'center',

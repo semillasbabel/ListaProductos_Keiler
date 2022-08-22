@@ -20,4 +20,61 @@ export const DATA = [
       imageuri: "https://th.bing.com/th/id/OIP.bvymiJrW2RvHYG6ZdixirgHaHa?pid=ImgDet&rs=1",
       description: "Dientes un tono más blancos en 1 semana, descubre con Luminous White Brilliant el poder de tu sonrisa radiante y saludable eliminando manchas de manera efectiva."
     },
+    {
+      id: "4",
+      name: "Jabon liquido de manos Palmolive Hygiene-Plus",
+      price: 1500,
+      imageuri: "https://i.pinimg.com/736x/89/a0/7e/89a07ebaa4f4e9a0859d69a47d687323--limbo-neon.jpg",
+      description: "El jabón líquido Palmolive Hygiene Plus lava de manera suave pero efectiva la piel de las manos, aportando la hidratación y la limpieza necesaria."
+    },
+
+    {
+      id: "5",
+      name: "Leche Mu Semidescremada 250ml",
+      price: 750,
+      imageuri: "https://cdn.shopify.com/s/files/1/1479/5948/products/automercado-lecheyotroslacteos36_b3bc8313-dc51-406c-8758-da8a981853c1_grande.png",
+      description: "leche Semidescremada rica en proteínas, grasas, vitaminas y minerales, necesarias para la nutrición humana."
+    },
+
+    // {
+    //   id: "",
+    //   name: "",
+    //   price: 0,
+    //   imageuri: "",
+    //   description: ""
+    // },
+
+    // {
+    //   id: "",
+    //   name: "",
+    //   price: 0,
+    //   imageuri: "",
+    //   description: ""
+    // },
+
+    // {
+    //   id: "",
+    //   name: "",
+    //   price: 0,
+    //   imageuri: "",
+    //   description: ""
+    // },
+
+    // {
+    //   id: "",
+    //   name: "",
+    //   price: 0,
+    //   imageuri: "",
+    //   description: ""
+    // },
+
+    // {
+    //   id: "",
+    //   name: "",
+    //   price: 0,
+    //   imageuri: "",
+    //   description: ""
+    // },
+    
+
   ];
