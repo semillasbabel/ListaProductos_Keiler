@@ -1,34 +1,35 @@
-import React, { useState } from "react";
-import { StatusBar } from 'expo-status-bar';
-import { 
-  StyleSheet, 
-  Text, 
-  Image, 
-  TextInput, 
-  View, 
-  Button,
-  FlatList,
-  SafeAreaView,
-  TouchableOpacity,
-} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from "react";
+import {Text, Image, View, Button, TouchableOpacity} from 'react-native';
+import {styles} from "../Styles/Styles";
 
-function DetailsScreen({navigation}) {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Details Screen</Text>
-        <Button
-        title="Go to Details... again"
-        onPress={() => navigation.push('Details')}/>
-        <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
-        <Button title="Go back" onPress={() => navigation.goBack()} />
-        <Button
-          title="Go back to first screen in stack"
-          onPress={() => navigation.popToTop()}
-        />
-      </View>
-    );
+function DetailsScreen({ route, navigation }) {
+  const {item} = route.params;
+  return (
+    <View style={ styles.containerdetails}>
+      
+      <Image
+        source={{
+        uri: item.imageuri}}
+        style={styles.imagedetails}
+      />
+
+      <Text style={ styles.namedetails}>{item.name}</Text>
+
+      <Text style={styles.pricedetails}>Precio: ₡{item.price}</Text>
+
+
+      <Text style={styles.descriptiondetails}>{item.description}</Text>
+
+      <TouchableOpacity
+      onPress={() => navigation.goBack()}>
+        <View style = {styles.btnbackdetails}>
+        <Text style={styles.btntext}>Volver</Text>
+        </View>
+      </TouchableOpacity>
+
+      {/* <Button color = "#1168AD" style={styles.btnbackdetails} title="Volver" onPress={() => navigation.goBack()} /> */}
+    </View>
+  );
 }
 
 export default DetailsScreen;
