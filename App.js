@@ -13,7 +13,10 @@ function App() {
         screenOptions={{
           headerStyle: {
             backgroundColor: '#1168AD'},
-          headerTintColor: 'white',
+          headerTitleStyle:{
+            fontSize: 25,
+            fontWeight: 'bold',
+          },
           headerTitleAlign: 'center',
         }}>
 
@@ -25,7 +28,7 @@ function App() {
         <Stack.Screen 
         name="Details" 
         component={DetailsScreen}
-        options={{ title: 'Details' }}/>
+        options={{ title: 'Details', headerBackVisible: false }}/>
 
       </Stack.Navigator>
     </NavigationContainer>

@@ -1,37 +1,18 @@
 import React, { useState } from "react";
-import { StatusBar } from 'expo-status-bar';
-import { 
-  StyleSheet, 
-  Text, 
-  Image, 
-  TextInput, 
-  View, 
-  Button,
-  FlatList,
-  SafeAreaView,
-  TouchableOpacity,
-} from 'react-native';
+import { Text, Image, FlatList, SafeAreaView, TouchableOpacity} from 'react-native';
+
 import {DATA} from "../Data/Products";
-
-  const Item = ({ item, onPress}) => (
-    <TouchableOpacity onPress={onPress} style={[styles.item]}>
-      <Image
-      source={{
-        uri: 'https://reactnative.dev/docs/assets/p_cat2.png',}}
-        style={{ width: 30, height: 30 }}/>
-      <Text style={[styles.title]}>{item.title}</Text>
-    </TouchableOpacity>
-  );
-
+import {styles} from "../Styles/Styles";
+import {Item} from "../Components/items"
 
 function HomeScreen({navigation}) {
-    const [selectedId, setSelectedId] = useState(null);
+    const [selectedId] = useState(null);
   
     const renderItem = ({ item }) => {
       return (
         <Item
           item={item}
-          onPress={() => navigation.navigate('Details')}
+          onPress={() => navigation.navigate('Details', {item: item })}
         />
       );
     };
@@ -47,26 +28,6 @@ function HomeScreen({navigation}) {
       </SafeAreaView>
     );
   }
-
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      marginTop: StatusBar.currentHeight || 0,
-      backgroundColor: "white",
-    },
-    item: {
-      flexDirection: 'row',
-      padding: 20,
-      marginVertical: 8,
-      marginHorizontal: 20,
-      backgroundColor: '#008AFA',
-    },
-    title: {
-      fontSize: 20,
-      color: 'black',
-      fontWeight: 'bold',
-    },
-  });
 
 export default HomeScreen;
 
