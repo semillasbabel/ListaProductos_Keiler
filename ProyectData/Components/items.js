@@ -1,4 +1,4 @@
-import { Text, Image, TouchableOpacity} from 'react-native';
+import { Text, View, Image, TouchableOpacity} from 'react-native';
 
 import {styles} from "../Styles/Styles";
 
@@ -12,8 +12,10 @@ export const Item = ({ item, onPress}) => (
         uri: item.imageuri}}
         style={styles.itemimage}/>
 
-      <Text style={[styles.itemname]}>{item.name}</Text>
-      <Text style={[styles.itemdescripcion]}>₡{item.price}</Text>
+      <View style={styles.indextextcontainer}>
+        <Text style={[styles.itemname]}>{item.name}</Text>
+        <Text style={[styles.itemdescripcion]}>₡{item.price}</Text>
+      </View>
 
     </TouchableOpacity>
 );

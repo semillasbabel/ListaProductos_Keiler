@@ -14,15 +14,21 @@ export const styles = StyleSheet.create({
       padding: 20,
       marginTop: 5,
       marginBottom: 5,
-      marginHorizontal: 70,
+      marginHorizontal: 10,
       backgroundColor: 'white',
       alignItems: 'center',
-      borderRadius: 40,
+      borderRadius: 10,
+      flexDirection: "row",
     },
 
     itemimage:{
       width: 80, 
       height: 80
+    },
+
+    indextextcontainer:{
+      // backgroundColor: "yellow", 
+      marginRight: 70,
     },
 
     itemname: {
@@ -35,9 +41,9 @@ export const styles = StyleSheet.create({
     itemdescripcion: {
       fontSize: 15,
       marginTop: 5,
-      color: '#1168AD',
-      fontWeight: 'bold',
       textAlign: 'center',
+      color: '#1168AD',
+      fontWeight: 'bold',      
     },
 
     // ---------- Details Styles ----------
