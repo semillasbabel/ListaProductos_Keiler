@@ -29,7 +29,7 @@ function App() {
         <Stack.Screen 
         name="Details" 
         component={DetailsScreen}
-        options={{ title: 'Details',  headerBackVisible: false }}/>
+        options={{ title: 'Detalles'}}/>
 
       </Stack.Navigator>
     </NavigationContainer>
